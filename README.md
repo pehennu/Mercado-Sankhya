@@ -155,3 +155,46 @@ No checkout (`POST /orders`), a operação é **totalmente transacional**:
 
 - DTOs foram usados para separar **entidades do banco da API**, garantindo encapsulamento e flexibilidade para o frontend.
 - Qualquer exceção de validação ou estoque insuficiente é retornada de forma **limpa e compreensível**.
+
+
+## ** Como rodar o frontend**
+
+1. **Pré-requisitos**
+  - [Node.js](https://nodejs.org/) v16+
+  - [Angular CLI](https://angular.io/cli) instalado globalmente:
+    ```bash
+    npm install -g @angular/cli
+    ```
+
+2. **Acessar a pasta do frontend**
+   ```bash
+   cd Mercado-Sankhya/frontend
+   ```
+
+3. **Instalar dependências**
+   ```bash
+   npm install
+   ```
+
+4. **Configurar URL da API (opcional)**
+   Editar `src/environments/environment.ts`:
+   ```typescript
+   export const environment = {
+     production: false,
+     apiUrl: 'http://localhost:8080'
+   };
+   ```
+
+5. **Rodar servidor de desenvolvimento**
+   ```bash
+   ng serve
+   ```
+   Acesse: [http://localhost:4200](http://localhost:4200)
+
+---
+
+## **5️⃣ Observações finais**
+- O frontend espera o backend em `http://localhost:8080`
+- DTOs foram usados para separar entidades do banco da API
+- Checkout é transacional: ou cria o pedido inteiro ou nada
+
