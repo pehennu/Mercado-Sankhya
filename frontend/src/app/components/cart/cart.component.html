@@ -1,0 +1,12 @@
+<aside>
+  <h2>Carrinho</h2>
+  <ul>
+    <li *ngFor="let item of cartService.items">
+      {{ item.product.name }} ({{ item.quantity }})
+      <button (click)="cartService.addItem(item.product)" aria-label="Adicionar 1">+</button>
+      <button (click)="cartService.removeItem(item.product)" aria-label="Remover 1">-</button>
+    </li>
+  </ul>
+  <div>Subtotal: {{ cartService.subtotal() | currency:'BRL' }}</div>
+  <button (click)="checkout()" [disabled]="cartService.items.length === 0" aria-label="Finalizar pedido">Finalizar</button>
+</aside>

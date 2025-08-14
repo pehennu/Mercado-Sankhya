@@ -1,0 +1,39 @@
+@import 'variables';
+
+div {
+  min-width: 300px;
+  text-align: center;
+  background: $surface;
+  color: $text-color;
+  border-radius: $border-radius;
+  padding: $padding;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: $primary-color;
+  font-family: $font-family;
+}
+
+ul {
+  text-align: left;
+  margin: 16px 0;
+  color: $error-color;
+}
+
+button {
+  margin-top: 16px;
+  background: $primary-color;
+  color: $surface;
+  border-radius: $border-radius;
+  font-family: $font-family;
+  border: none;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: $primary-color-dark;
+  }
+}
