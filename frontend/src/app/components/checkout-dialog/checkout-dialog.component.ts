@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import {CommonModule, CurrencyPipe} from '@angular/common';
+import {CommonModule} from '@angular/common';
 
 export interface CheckoutDialogData {
   success: boolean;
@@ -13,7 +13,7 @@ export interface CheckoutDialogData {
   templateUrl: './checkout-dialog.component.html',
   styleUrls: ['./checkout-dialog.component.scss'],
   standalone: true,
-  imports: [CommonModule, CurrencyPipe]
+  imports: [CommonModule]
 })
 export class CheckoutDialogComponent {
   constructor(

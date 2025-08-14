@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 :host {
   display: flex;
@@ -11,7 +11,7 @@
 .app-header {
   background: $primary-color;
   color: $surface;
-  padding: $padding $padding * 2 / 3;
+  padding: calc($padding * 2 / 3);
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -28,6 +28,6 @@
   background: $text-color;
   color: $surface;
   text-align: center;
-  padding: $padding / 1.5 0;
+  padding: calc($padding / 1.5);
   font-size: 0.9rem;
 }
