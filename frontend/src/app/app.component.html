@@ -1,0 +1,15 @@
+<header class="app-header">
+  <h1>{{ title }}</h1>
+</header>
+
+<router-outlet></router-outlet>
+
+<main class="app-main">
+  <app-product-list></app-product-list>
+  <app-cart></app-cart>
+  <app-checkout-dialog></app-checkout-dialog>
+</main>
+
+<footer class="app-footer">
+  <span>&copy; {{ today | date:'yyyy' }} Market</span>
+</footer>
