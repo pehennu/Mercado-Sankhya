@@ -1,0 +1,32 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.products-section {
+  flex: 2;
+  padding-right: 1rem;
+}
+
+.cart-section {
+  flex: 1;
+  padding-left: 1rem;
+  border-left: 1px solid #000;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .products-section,
+  .cart-section {
+    padding: 0;
+    border: none;
+  }
+
+  .cart-section {
+    margin-top: 1rem;
+  }
+}
