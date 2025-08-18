@@ -183,7 +183,7 @@ No checkout (`POST /orders`), a operação é **totalmente transacional**:
 
 5. **Rodar servidor de desenvolvimento**
    ```bash
-   ng serve
+   npm start
    ```
    Acesse: [http://localhost:4200](http://localhost:4200)
 
