@@ -160,15 +160,11 @@ No checkout (`POST /orders`), a operação é **totalmente transacional**:
 ## ** Como rodar o frontend**
 
 1. **Pré-requisitos**
-  - [Node.js](https://nodejs.org/) v16+
-  - [Angular CLI](https://angular.io/cli) instalado globalmente:
-    ```bash
-    npm install -g @angular/cli
-    ```
+  - Certifique-se de ter o **Node.js 16+** e o **npm** instalados no seu sistema.
 
 2. **Acessar a pasta do frontend**
    ```bash
-   cd Mercado-Sankhya/frontend
+   cd produto-carrinho-frontend
    ```
 
 3. **Instalar dependências**
